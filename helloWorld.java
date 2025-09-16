@@ -1,4 +1,4 @@
-/*
+/**
 This program will output the text "Hello, world!",
 as is customary when learning a new language.
 */
