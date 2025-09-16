@@ -1,23 +1,22 @@
 /**
-This program will output the text "Hello, world!",
-as is customary when learning a new language.
-*/
+ * The HelloWorld program implements an application that
+ * simply displays "Hello World!" to the standard output.
+ * 
+ * @author Hackerman
+ * @version 1.0
+ */
 public class helloWorld {
+
+    // The main method, obviously.
     public static void main(String[] args) {
 
-        int x = 100;
+        /*
+         * The code below will print the words Hello World
+         * to the screen, and it is amazing
+         */
+        System.out.println("Hello, world!");
 
-        x -= 5;
-        System.out.println(x);
-
-        x *= 5;
-        System.out.println(x);
-
-        x /= 5;
-        System.out.println(x);
-
-        x %= 5;
-        System.out.println(x);
+        /* Turns out this is fine, too. */
 
     }
 }
