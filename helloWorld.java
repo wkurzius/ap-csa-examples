@@ -2,16 +2,16 @@
 public class helloWorld {
 
     public static void main(String[] args) {
-        System.out.println(inverse(0, 4));
+        inverse(3, 4);
 
-        
     }
 
-    public static String inverse(int n, int d) {
-        if (n != 0) {
-            return d + "/" + n;
-        }   
+    public static void inverse(int n, int d) {
+        if (n != 0);
+        
+            System.out.println("hello");
+        
 
-        return "Cannot be inverted.";
+        System.out.println("goodbye");
     }
 }
