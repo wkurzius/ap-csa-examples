@@ -27,11 +27,13 @@ public class Beader {
     }
 
     public static void main(String[] args) {
+
         System.out.println(beadCheck("OBWO"));
         System.out.println(beadCheck("BWBGOGWBB"));
         System.out.println(beadCheck("ROYGBIVW"));
         System.out.println(beadCheck("BOBOBOBO"));
         System.out.println(beadCheck("WBWRWBWRWBWR"));
         System.out.println(beadCheck("BWWWBBWWWB"));
+
     }
 }
