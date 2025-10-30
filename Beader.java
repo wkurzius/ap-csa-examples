@@ -6,22 +6,25 @@ public class Beader {
         boolean lengthGood, correctColors, startEndGood;
 
         // length check
-        if (length >= 5 && length <= 10)
+        if (length >= 5 && length <= 10) {
             lengthGood = true;
-        else
+        } else {
             lengthGood = false;
+        }
 
         // color check
-        if (s.indexOf("B") >= 0 && s.indexOf("W") >= 0)
+        if (s.indexOf("B") >= 0 && s.indexOf("W") >= 0) {
             correctColors = true;
-        else
+        } else {
             correctColors = false;
+        }
 
         // start-end check
-        if (s.substring(0, 1).equals(s.substring(length - 1)))
+        if (s.substring(0, 1).equals(s.substring(length - 1))) {
             startEndGood = true;
-        else
+        } else {
             startEndGood = false;
+        }
 
         return lengthGood && correctColors && startEndGood;
     }
