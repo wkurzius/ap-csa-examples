@@ -1,9 +1,22 @@
 public class TwoNineAlgos {
 
+    public static int vowelCounter(String s) {
+        int vowelCount = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            String currentChar = s.substring(i, i + 1);
+            int vowelIndex = "aeiou".indexOf(currentChar);
+            if (vowelIndex != -1)
+                vowelCount++;
+        }
+
+        return vowelCount;
+    }
+
     public static boolean isDivisible(int n, int d) {
         return (n % d == 0);
     }
-    
+
     // exclusive
     public static int sum(int start, int end, int count) {
 
@@ -42,10 +55,11 @@ public class TwoNineAlgos {
     }
 
     public static void main(String[] args) {
-        System.out.println(minRand(1000000000));
+        // System.out.println(minRand(1000000000));
         // System.out.println(isDivisible(5, 2));
         // System.out.println(printDigits(42069));
         // System.out.println(sum(1, 10, 1));
+        System.out.println(vowelCounter("qwrety"));
     }
 
 }

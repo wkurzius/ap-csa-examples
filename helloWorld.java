@@ -2,15 +2,16 @@
 public class helloWorld {
 
     public static void main(String[] args) {
+        String s = "verisimilitude";
+        int vowelCount = 0;
 
-        int i = 1;
+        for (int i = 0; i < s.length(); i++) {
+            String currentChar = s.substring(i, i+1);
+            int vowelIndex = "aeiou".indexOf(currentChar);
+            if (vowelIndex != -1) vowelCount++;
+        }
 
-        while (i < 10) {
-            System.out.println(i);
-            i++;
-        } 
-
-
+        System.out.println(vowelCount);
     }
 
 }
